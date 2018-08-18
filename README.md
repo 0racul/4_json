@@ -1,10 +1,10 @@
 # Prettify JSON
 
-[TODO. There will be project description]
+Reformat Json
 
 # Quickstart
-
-[TODO]
+Скрипт требует для своей работы установленного интерпретатора Python версии 3.5
+need json library onboard
 
 Example of script launch on Linux, Python 3.5:
 
