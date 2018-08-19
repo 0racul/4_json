@@ -3,22 +3,21 @@ import json
 
 def load_data(filepath):
 
-    with open(filepath) as f:
+    with open(filepath) as file:
+        temp_inf = json.loads(file.read())
 
-        json.loads(f.read())
+    with open("pretty.json", "w") as good_file:
+        json.dump(temp_inf, good_file, indent=5, encoding="utf-8")
 
-    with open("pretty.json", "w") as g:
-
-        json.dump(f, g, indent=5)
-
-    return f
+    return file
 
 
-print("file path pls \n")
 
-dir_path = input()
+if __name__ == '__main__':
 
-loaded_data = load_data(dir_path)
+    print("file path pls \n")
+    dir_path = input()
+    loaded_data = load_data(dir_path)
 
 
 
