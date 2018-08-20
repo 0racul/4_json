@@ -1,6 +1,20 @@
 # Prettify JSON
 
-Reformat Json
+Prettify Json on output
+
+output example
+
+
+        "geoData": {
+            "coordinates": [
+                37.63744024160826,
+                55.76245679292497
+            ],
+            "type": "Point"
+        },
+        "global_id": 878848395
+    }
+]
 
 # Quickstart
 Need Python 3.5 interpreter onboard
@@ -14,7 +28,7 @@ Example of script launch on Linux, Python 3.5:
 ```bash
 
 $ python pprint_json.py <path to file>
-# TODO new .json file in directory fith pretty formatting
+# TODO output a json data in pretty view
 
 ```
 
