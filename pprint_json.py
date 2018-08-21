@@ -11,10 +11,10 @@ def load_data(filepath):
 
 def print_data(json_data):
 
-    file = json.dumps(json_data, indent=4, sort_keys=True)
-    print(file)
+    file_data = json.dumps(json_data, indent=4, sort_keys=True)
+    print(file_data)
 
-    return file
+    return file_data
 
 
 
