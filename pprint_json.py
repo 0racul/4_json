@@ -1,31 +1,24 @@
 import json
 
 
-
 def load_data(filepath):
 
     with open(filepath) as file:
-        json_data = json.loads(file.read())
+        data_from_json = json.loads(file.read())
 
-    return json_data
+    return data_from_json
+
 
 def print_data(json_data):
 
-    file_data = json.dumps(json_data, indent=4, sort_keys=True)
-    print(file_data)
+    shown_data = json.dumps(json_data, indent=4, sort_keys=True)
+    print(shown_data)
 
-    return file_data
-
+    return None
 
 
 if __name__ == "__main__":
 
-    print("file path pls \n")
-    dir_path = input()
+    dir_path = "/home/inverdat/PycharmProjects/4_json/bars.json"
     loaded_data = load_data(dir_path)
     print_data(loaded_data)
-
-
-
-
-
