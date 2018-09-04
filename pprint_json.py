@@ -14,8 +14,6 @@ def print_data(json_data):
     pretty_json = json.dumps(json_data, indent=4, sort_keys=True)
     print(pretty_json)
 
-    return
-
 
 def parser_parser():
     global parser
